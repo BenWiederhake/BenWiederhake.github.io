@@ -1,0 +1,193 @@
+<!DOCTYPE html>
+<html lang="en-US">
+<head>
+  <meta charset='utf-8'>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <link rel="stylesheet" href="/x/style.css">
+  <title>Ben Wiederhake's GitHub Page</title>
+  <meta name="description" content="Personal homepage" />
+  <link rel="canonical" href="https://benwiederhake.github.io/" />
+  <meta property="og:url" content="https://benwiederhake.github.io/" />
+  <meta property="og:site_name" content="BenWiederhake.github.io" />
+  <meta property="og:type" content="website" />
+  <meta name="twitter:card" content="summary" />
+  <meta property="twitter:title" content="Welcome to GitHub Pages" />
+  <script type="application/ld+json">
+  {"@context":"https://schema.org","@type":"WebSite","description":"Personal homepage","headline":"Ben Wiederhake's GitHub Page","name":"BenWiederhake.github.io","url":"https://benwiederhake.github.io/"}</script>
+</head>
+<body>
+  <div id="container">
+    <div class="inner">
+
+      <header>
+        <h1>Ben Wiederhake</h1>
+        <h2>I like complex algorithms, abstract math, intricate edge case analysis, and computer science in general.</h2>
+      </header>
+
+      <hr>
+      <section id="main_content">
+
+
+<h2>I like working on lots of things</h2>
+
+<h3>Practical projects</h3>
+
+I have written and collaborated on some practical projects that are being used productively, most prominently:
+
+<ul>
+  <li><a href="https://github.com/SerenityOS/serenity/#serenityos">SerenityOS</a> is a complete operating system, written from the ground up, with its own Kernel, windowing system, solitaire game, browser, text editor, etc. I contributed many bug fixes and features to the Kernel and other parts of the system.</li>
+  <li><a href="https://github.com/BenWiederhake/der-wopper-bot">der-wopper-bot</a> is only a small project, but it sees heavy use: It's a small game bot for Telegram, including lots of unit tests. I'm weirdly proud of how well the test interface works!</li>
+  <li><a href="https://github.com/42wim/matterbridge/wiki/Features">matterbridge</a> is a bridge between virtually any messaging service. Not every friend I have is on every platform. Matterbridge can  copy messages between groups, so it doesn't matter whether someone reads the group through Discord/Telegram/Matrix/etc. I contributed some bugfixes and features, particularly for the Telegram bridge.</li>
+</ul>
+
+<details>
+  <summary>More practical projects!</summary>
+  <ul>
+    <li><a href="https://github.com/ars3niy/tdlib-purple/#new-libpurple-plugin-for-telegram">tdlib-purple</a> is a plugin for Pidgin (and Finch and Adium and other libpurple-based clients) that provides access to Telegram. I contributed l10n support and some minor fixes, especially to the build system. It is a successor to <a href="https://github.com/majn/telegram-purple/#telegram-purple-unofficial-beta">telegram-purple</a>, which I maintained until it completely fell apart, due to rapid and too disruptive API changes made by Telegram.</li>
+    <li><a href="https://github.com/BenWiederhake/pwned_passwords#pwned_passwords">pwned_passwords</a> is a small, easily-auditable script that can be used to check large amounts of passwords against the excellent <a href="https://haveibeenpwned.com/">haveibeenpwned.com service</a> by Troy Hunt. This way, you can easily and safely check whether any of your passwords has occurred in any breach. Of course, if you have any match at all, you should change that password immediately.</li>
+    <li><a href="https://github.com/BenWiederhake/spread#restic-run">spread</a> simplifies spreading your backups. I like <a href="https://github.com/restic/restic/#introduction">the backup program restic</a> a lot, but setting it up and automating it is a bit of a hassle. That's why I wrote this collection of small shell scripts to help me with that.</li>
+    <li><a href="https://benwiederhake.github.io/randombias/">randombias</a> is a simple webpage that shows and explains a single out of the plethora of cognitive biases. I find the <a href="https://en.wikipedia.org/wiki/List_of_cognitive_biases">Wikipedia list of cognitive biases</a> way too overwhelming to properly digest, so I built this page in order to take in one bias after the other, every once in a while.</li>
+    <li>FIXME WRONG CATEGORY <a href="https://github.com/BenWiederhake/domain-word#domain-word">domain-word</a> started out by observing that some domains, like <a href="http://bullsh.it/">bullsh.it</a>, sound really funny. What other domains can be constructed this way? Turns out, there's <em>a lot</em> of words that could be domains, and by far not all are taken!</li>
+    <li>FIXME WRONG CATEGORY <a href="https://github.com/BenWiederhake/noisycols#noisycols">noisycols</a>: I know a thing or two about how colors work. So what happens if we start with a Voronoi-like partitioning, use a bright high-saturation color for the centers, interpolate in a gamma-corrected way across the borders, and apply Gaussian-distributed shifts to introduce fuzziness? Answer: Pretty pictures! And now my desktop background.</li>
+    <li><a href="https://github.com/BenWiederhake/atomic_store#atomic_store">atomic_store</a> (<a href="https://pypi.org/project/atomic-store/">PyPI</a>) is a thin wrapper around <a href="https://pypi.org/project/atomicwrites/">atomicwrites</a>. This way, atomic permanence of simple values is as simple as assigning to a property!</li>
+    <li><a href="https://github.com/BenWiederhake/phf_mut#phf_mut">phf_mut</a> (<a href="https://crates.io/crates/phf_mut">crates.io</a>) is my own extension to the family of PHF-crates. The existing libraries exclusively handle immutable data, but my usecase involved data that needed to mutate, hence the need for this crate was born.</li>
+  </ul>
+  <!-- Not listed: pypoison, masked_permute, pysaarvv, briar-rose -->
+</details>
+
+<h4>Theory-rich projects</h4>
+
+I have also written several projects that are interesting Proofs-of-Concept, and show off a certain idea or theory:
+
+<ul>
+  <li><a href="https://github.com/BenWiederhake/ohno#ohno---interpreter-for-ohno">ohno</a> and <a href="https://github.com/BenWiederhake/judecca#judecca">judecca</a> are terrible programming languages, that combines the worst of brainfuck and Malbolge. ohno takes the input source code, “compiles” it by computing some kind of hash, and interprets that as brainfuck code. I then wrote judecca to address some shortcomings, and to experiment with extensible-output hash functions like keccak.</li>
+  <li><a href="https://github.com/BenWiederhake/ear#ear">ear</a> is an incredibly stupid and also accurate language detection system. I heard about complicated language detection algorithms, and wondered about a simpler approach: Just look at the text, try to recognize words, and if you recognize, say, 10 Italian words and no other language, then it's probably Italian text. Implemented, tested, and it works well enough. Also, I learned quite a bit about languages.</li>
+  <li><a href="https://github.com/BenWiederhake/science-bridge#science-bridge">science-bridge</a> applies a lot of science to the card game<!--kzrz7f-->. Actually, it's a lot of stochastic analysis, math, and philosophizing about which operations might be useful in bridge.</li>
+</ul>
+
+<details>
+  <summary>More theory-rich projects!</summary>
+  <ul>
+    <li><a href="https://github.com/BenWiederhake/MetaContFn#what-is-this">MetaContFn</a> is an offshoot from my doctoral research and that of a college. For a while we were worried that metastability-containment is such a strong property that the set of all metastability-containing functions might be too small, or too uninteresting. This project enumerates all such functions, and ends in the discovery of a particularly interesting and easy to understand family of functions. Read it from top to bottom, see if you can find the family of functions before I explain it directly! :)</li>
+    <li><a href="https://github.com/BenWiederhake/general_purpose_fixedpoint#general_purpose_fixedpoint">general_purpose_fixedpoint</a> is a constructive and tangible proof of an incredibly abstract and weird theorem. It basically says: For every code transformation, there is a piece of code whose behavior will not change under that transformation. You provide a code transformation, and this project will give you a fixedpoint. It will even *run* the fixedpoint, both with and without the transformation, just to rub it in!</li>
+    <li><a href="https://github.com/BenWiederhake/awake#awake">awake</a> is about the series <a href="https://www.imdb.com/title/tt1839683/?ref_=fn_al_tt_2">“Awake”</a>. It is a proof-of-concept setup that <em>should</em> be able to address all practical and cryptographic requirements allow the protagonist to prove that both realities exist.</li>
+    <li><a href="https://github.com/BenWiederhake/solve99game-rs#solve99game-rs">solve99game-rs</a> is a ridiculously hyper-optimized solver of the <a href="https://github.com/BenWiederhake/99game#99game">99game</a>. Through the brute-force search, the surprisingly-easy pattern to solve the game for odd degrees became obvious. However, I don't understand what the pattern is for even degrees, and <a href="https://oeis.org/search?q=3,6,9,15,26,33">OEIS doesn't know it, either</a>.</li>
+    <li><a href="https://github.com/BenWiederhake/steppow#steppow">steppow</a> is a Proof-of-Concept for a PoW scheme that tries to improve the fairness, in contrast to classic Partial Hash Inversion approaches.</li>
+    <li><a href="https://github.com/BenWiederhake/implicants#implicants">implicants</a> are a theoretical property of binary functions. This little piece of code computes the number of implicants for an arbitrary, given function, and thus demonstrates that many functions have exponentially many implicants.</li>
+    <!-- Not listed: shepard -->
+  </ul>
+</details>
+
+<h4>Other things that I'm a bit proud of</h4>
+
+<ul>
+  <li><a href="https://benwiederhake.github.io/lessonsonlife/">lessonsonlife</a> (<a href="https://github.com/BenWiederhake/lessonsonlife">repo</a>) is an incomplete list of stuff everyone should know. I tried to assemble some foundational advice-for-everyone that I had to learn the hard way; maybe this makes it easier for someone else.</li>
+  <li><a href="https://github.com/BenWiederhake/solitaire_aide/#solitaire-aide">solitaire_aide</a> is a collection of tools around <a href="https://www.schneier.com/academic/solitaire/">Solitaire encryption</a>. The idea is to teach myself to correctly and reliably perform the encryption/decryption by hand.</li>
+</ul>
+
+<details>
+  <summary>More things that I'm a bit proud of!</summary>
+  <ul>
+    <li><a href="https://github.com/BenWiederhake/plasmoire#plasmoire">plasmoire</a> is an exploration of  moire patterns and interference. Pretty wallpapers and intricate math! :D</li>
+    <li><a href="https://github.com/BenWiederhake/pixelcrush#pixelcrush">pixelcrush</a> provides a canvas for everyone to draw on. A bit like <a href="https://www.reddit.com/r/place">r/place</a>, but overwriting a pixel gets progressively more difficult. Originally I planned something <a href="https://github.com/BenWiederhake/pixelchain#pixelchain">way more complicated</a> that never saw the light of day.</li>
+    <li><a href="https://github.com/BenWiederhake/portable-endian">portable-endian</a> is a minimalistic solution to the problem of endian conversion (big/little/host). Instead of a messy detection mechanism that ends up being faulty all the time, this approach exploits the fact that the compiler already knows the machine endianess. This code is dead-simple, ultra-portable (written in C89 and compiles in every conceivable compiler), and in many compilers these functions are compiled down to <code>nop</code> or <code>bswap</code>, respectively. The code is branch-free, and does not use any global state or initialization!</li>
+    <li><a href="https://benwiederhake.github.io/statictactoe/nnnnnnnnn.html">statictactoe</a> (<a href="https://github.com/BenWiederhake/statictactoe/#static-tac-toe">repo</a>) started as a simple question: Can I implement TicTacToe without any JavaScript? Yes, yes I can!</li>
+    <li><a href="https://github.com/BenWiederhake/narrate#narratepy----create-a-narrative-out-of-the-blue">narrate</a> creates a narrative out of nothing. In fact, it is technically you who creates the narrative, but only subconsciously!</li>
+    <li><a href="https://github.com/BenWiederhake/minprn#minimal-expression-search">minrpn</a> gives you the minimal expression to arrive at a goal number, given only other input numbers.</li>
+    <!-- Not listed: scrape_clipboard, count_array, subint, license-crawl -->
+  </ul>
+</details>
+
+<h4>Silly things, just for the hell of it</h4>
+
+<ul>
+  <li><a href="https://github.com/BenWiederhake/normal-quine#normal-quine">normal-quine</a> “decodes” its own source code. I've also written a <a href="https://github.com/BenWiederhake/git_quine#git_quine">git_quine</a> that recreates its own git repository. <a href="https://github.com/BenWiederhake/QuInE#quine">QuInE</a> recreates its own source code with randomized capitalization.</li>
+  <li><a href="https://benwiederhake.github.io/oeis-funfacts/">oeis-funfacts</a> (<a href="https://github.com/BenWiederhake/oeis-funfacts/#oeis-funfacts">repo</a>) tells you what is currently the first uninteresting number (FUN). This is computed using the OEIS database.</li>
+</ul>
+
+<details>
+  <summary>More silly things!</summary>
+  <ul>
+    <li><a href="https://benwiederhake.github.io/moar-emoji/">moar-emoji</a> (<a href="https://github.com/BenWiederhake/moar-emoji/#moar-emoji">repo</a>) enriches your life by giving you 💃M🚍O👗A💧R🐹 🐖E🚠M🍪O🐃J⏳I🍤!🫠 Also available as a <a href="https://github.com/BenWiederhake/n-e-e-d-s-m-o-r-e-m-o-j-i-#needsmoremoji">command-line tool</a>.</li>
+    <li><a href="https://github.com/BenWiederhake/stimulus-check#stimulus-check">stimulus-check</a> outputs a stimulating checkmark. Yes, I'm silly like that. <code>:)</code></li>
+
+    <li><a href="https://benwiederhake.github.io/shitlist/">shitlist</a> (<a href="https://github.com/BenWiederhake/shitlist/#shitlist">repo</a>) is a minimalistic website where you can't sell your stuff. No relation to Craigslist.</li>
+    <!-- Not listed: random_tweets, gay, tween_images, TDWTF-BYOC-Casino, passion -->
+  </ul>
+</details>
+
+
+=== exploration
+* practical-floop
+* serenity-fuzz-corpora
+* stackerhour
+* permutators
+* evo_path
+PiWalkLn
+mystrtod
+how-to-random
+lua-broken-hash Public archive
+sample_convex_combinations
+markovimg
+tripmage
+restic-slow
+selfcount
+what-the-unicode
+# log_image
+# pot-de-miel
+# fuzzimg Public archive (shuffle/sort)
+
+
+<h2 id="education">Education</h2>
+
+FIXME
+
+<h2 id="publications">Publications</h2>
+
+FIXME
+
+<h2 id="interested">Interested in hiring me?</h2>
+
+FIXME
+
+<h2 id="markdown">Markdown</h2>
+
+<p>Markdown is a lightweight and easy-to-use syntax for styling your writing. It includes conventions for</p>
+
+<div class="language-markdown highlighter-rouge"><div class="highlight"><pre class="highlight"><code>Syntax highlighted code block
+
+<span class="gh"># Header 1</span>
+<span class="gu">## Header 2</span>
+<span class="gu">### Header 3</span>
+<span class="p">
+-</span> Bulleted
+<span class="p">-</span> List
+<span class="p">
+1.</span> Numbered
+<span class="p">2.</span> List
+
+<span class="gs">**Bold**</span> and _Italic_ and <span class="sb">`Code`</span> text
+
+<span class="p">[</span><span class="nv">Link</span><span class="p">](</span><span class="sx">url</span><span class="p">)</span> and !<span class="p">[</span><span class="nv">Image</span><span class="p">](</span><span class="sx">src</span><span class="p">)</span>
+</code></pre></div></div>
+
+<p>For more details see <a href="https://docs.github.com/en/github/writing-on-github/getting-started-with-writing-and-formatting-on-github/basic-writing-and-formatting-syntax">Basic writing and formatting syntax</a>.</p>
+
+<h3 id="jekyll-themes">Jekyll Themes</h3>
+
+<p>Your Pages site will use the layout and styles from the Jekyll theme you have selected in your <a href="https://github.com/BenWiederhake/BenWiederhake.github.io/settings/pages">repository settings</a>. The name of this theme is saved in the Jekyll <code class="language-plaintext highlighter-rouge">_config.yml</code> configuration file.</p>
+
+<h3 id="support-or-contact">Support or Contact</h3>
+
+<p>Having trouble with Pages? Check out our <a href="https://docs.github.com/categories/github-pages-basics/">documentation</a> or <a href="https://support.github.com/contact">contact support</a> and we’ll help you sort it out.</p>
+
+        </section>
+
+        <footer>
+          This page is hand-crafted.
+        </footer>
+      </div>
+    </div>
+  </body>
+</html>
