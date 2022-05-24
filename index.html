@@ -48,8 +48,6 @@ I have written and collaborated on some practical projects that are being used p
     <li><a href="https://github.com/BenWiederhake/pwned_passwords#pwned_passwords">pwned_passwords</a> is a small, easily-auditable script that can be used to check large amounts of passwords against the excellent <a href="https://haveibeenpwned.com/">haveibeenpwned.com service</a> by Troy Hunt. This way, you can easily and safely check whether any of your passwords has occurred in any breach. Of course, if you have any match at all, you should change that password immediately.</li>
     <li><a href="https://github.com/BenWiederhake/spread#restic-run">spread</a> simplifies spreading your backups. I like <a href="https://github.com/restic/restic/#introduction">the backup program restic</a> a lot, but setting it up and automating it is a bit of a hassle. That's why I wrote this collection of small shell scripts to help me with that.</li>
     <li><a href="https://benwiederhake.github.io/randombias/">randombias</a> is a simple webpage that shows and explains a single out of the plethora of cognitive biases. I find the <a href="https://en.wikipedia.org/wiki/List_of_cognitive_biases">Wikipedia list of cognitive biases</a> way too overwhelming to properly digest, so I built this page in order to take in one bias after the other, every once in a while.</li>
-    <li>FIXME WRONG CATEGORY <a href="https://github.com/BenWiederhake/domain-word#domain-word">domain-word</a> started out by observing that some domains, like <a href="http://bullsh.it/">bullsh.it</a>, sound really funny. What other domains can be constructed this way? Turns out, there's <em>a lot</em> of words that could be domains, and by far not all are taken!</li>
-    <li>FIXME WRONG CATEGORY <a href="https://github.com/BenWiederhake/noisycols#noisycols">noisycols</a>: I know a thing or two about how colors work. So what happens if we start with a Voronoi-like partitioning, use a bright high-saturation color for the centers, interpolate in a gamma-corrected way across the borders, and apply Gaussian-distributed shifts to introduce fuzziness? Answer: Pretty pictures! And now my desktop background.</li>
     <li><a href="https://github.com/BenWiederhake/atomic_store#atomic_store">atomic_store</a> (<a href="https://pypi.org/project/atomic-store/">PyPI</a>) is a thin wrapper around <a href="https://pypi.org/project/atomicwrites/">atomicwrites</a>. This way, atomic permanence of simple values is as simple as assigning to a property!</li>
     <li><a href="https://github.com/BenWiederhake/phf_mut#phf_mut">phf_mut</a> (<a href="https://crates.io/crates/phf_mut">crates.io</a>) is my own extension to the family of PHF-crates. The existing libraries exclusively handle immutable data, but my usecase involved data that needed to mutate, hence the need for this crate was born.</li>
   </ul>
@@ -111,81 +109,61 @@ I have also written several projects that are interesting Proofs-of-Concept, and
   <ul>
     <li><a href="https://benwiederhake.github.io/moar-emoji/">moar-emoji</a> (<a href="https://github.com/BenWiederhake/moar-emoji/#moar-emoji">repo</a>) enriches your life by giving you 💃M🚍O👗A💧R🐹 🐖E🚠M🍪O🐃J⏳I🍤!🫠 Also available as a <a href="https://github.com/BenWiederhake/n-e-e-d-s-m-o-r-e-m-o-j-i-#needsmoremoji">command-line tool</a>.</li>
     <li><a href="https://github.com/BenWiederhake/stimulus-check#stimulus-check">stimulus-check</a> outputs a stimulating checkmark. Yes, I'm silly like that. <code>:)</code></li>
-
     <li><a href="https://benwiederhake.github.io/shitlist/">shitlist</a> (<a href="https://github.com/BenWiederhake/shitlist/#shitlist">repo</a>) is a minimalistic website where you can't sell your stuff. No relation to Craigslist.</li>
+    <li><a href="https://amicovid19positive.github.io">amicovid19positive</a> (<a href="https://github.com/amicovid19positive/amicovid19positive.github.io">repo</a>) answers the burning question everyone has these days: Am I COVID-19 positive? The answer might shock you!</li>
     <!-- Not listed: random_tweets, gay, tween_images, TDWTF-BYOC-Casino, passion -->
   </ul>
 </details>
 
+<h4>Exploratory projects</h4>
 
-=== exploration
-* practical-floop
-* serenity-fuzz-corpora
-* stackerhour
-* permutators
-* evo_path
-PiWalkLn
-mystrtod
-how-to-random
-lua-broken-hash Public archive
-sample_convex_combinations
-markovimg
-tripmage
-restic-slow
-selfcount
-what-the-unicode
-# log_image
-# pot-de-miel
-# fuzzimg Public archive (shuffle/sort)
+<ul>
+  <li><a href="https://github.com/BenWiederhake/PiWalkLn#PiWalkLn">PiWalkLn</a> shows how Pi walks all over the place. Look at all these cool pictures! I learned a lot about projections and angles that day.</li>
+  <li><a href="https://github.com/BenWiederhake/evo_path#evo_path">evo_path</a> evolves a short path/polygon so that it looks like a given map. Isn't that neat? :D I learned a lot about evolution and paths that day. Inspired by <a href="https://github.com/BenWiederhake/GeneticCode#genetic-code">GeneticCode</a>, where teensy Tutrle-like programs evolve in order to hunt food and survive.</li>
+  <li><a href="https://github.com/BenWiederhake/stackerhour#stackerhour">stackerhour</a> was an attempt to recreate the <a href="http://csi.chemie.tu-darmstadt.de/ak/immel/graphics/povray35/large_stackerday.jpg">POVRay “Stackerday” scene</a> from scratch, in Python. I learned a lot about perspective and z-order that day.</li>
+  <li><a href="https://github.com/BenWiederhake/noisycols#noisycols">noisycols</a>: I know a thing or two about how colors work. So what happens if we start with a Voronoi-like partitioning, use a bright high-saturation color for the centers, interpolate in a gamma-corrected way across the borders, and apply Gaussian-distributed shifts to introduce fuzziness? Answer: Pretty pictures! And now my desktop background.</li>
+</ul>
 
+<details>
+  <summary>More exploratory projects!</summary>
+  <ul>
+    <li><a href="https://github.com/BenWiederhake/mystrtod/blob/master/mystrtod.cpp">mystrtod</a> is my very own <a href="https://www.cplusplus.com/reference/cstdlib/strtod/"><code>strtod</code></a>-implementation. It should still be mostly recignizable in the <a href="https://github.com/SerenityOS/serenity/blob/420f78ca8be9b497eeb8e63303969f7bb85cf245/Userland/Libraries/LibC/stdlib.cpp#L397">Serenity implementation</a> and <a href="https://github.com/SerenityOS/serenity/blob/master/Tests/LibC/TestStrtodAccuracy.cpp#L27">tests</a>.</li>
+    <li><a href="https://github.com/BenWiederhake/practical-floop#practical-floop">practical-floop</a> is a practical implementation of the BlooP/FlooP languages. This showcases how the addition of the <code>while</code>-keyword makes the difference between a language whose programs always halt and a Turing-complete language. I even implemented some useful macros.</li>
+    <li><a href="https://github.com/BenWiederhake/permutators#permutators">permutators</a> was an experiment to see which method of “player permutation” I like best. I learned a lot about randomness, fairness, and human perception. In fact, I have the impression I'm still not done yet!</li>
+    <li><a href="https://github.com/BenWiederhake/how-to-random#how-to-random">how-to-random</a> gives you an automatic collection of random images from WikiHow. I learned a lot about scraping and copyright that day.</li>
+    <li><a href="https://github.com/BenWiederhake/markovimg#markovimg">markovimg</a> visualizes how “uniform random in isolation, but with dependencies” look like. Isn't that neat?</li>
+    <li><a href="https://github.com/BenWiederhake/tripmage#tripmage">tripmage</a> is based on the idea that R, G, B is just the canonical color vector basis in the 3D colorspace, and can be rotated arbitrarily. The idea was to rotate the vector basis randomly as a function of the position in the image, but never got around to finish that part. Enjoy the nicely distorted picture of a train, in the meantime!</li>
+    <li><a href="https://github.com/BenWiederhake/restic-slow#documentation-for-resticrestic2284">restic-slow</a> is the proof of concept to demonstrate that the backup program <a href="https://restic.net/">restic</a> used to have <a href="https://github.com/restic/restic/issues/2284">terrible performance in some cases</a>. Turns out, it was a classic “accidentally quadratic” bug. (Apparently it is even cubic in some cases, but I couldn't reproduce that.) I learned a lot about flamegraphs, automation, and the Go language that day. :)</li>
+    <li><a href="https://github.com/BenWiederhake/selfcount#selfcount">selfcount</a> is an exploration of numbers that count their own zeros (or ones). As usual, turns out that there already is an <a href="https://oeis.org/A228085">entry in OEIS</a> for that.</li>
+    <li><a href="https://github.com/BenWiederhake/what-the-unicode#what-the-unicode">what-the-unicode</a> is an attempt to make weird unicode-shenaniganery more visible. I already know that Unicode and human language symbols behave weirdly, but it turns out they behave even more weirdly than I thought.</li>
+    <li><a href="https://github.com/BenWiederhake/domain-word#domain-word">domain-word</a> started out by observing that some domains, like <a href="http://bullsh.it/">bullsh.it</a>, sound really funny. What other domains can be constructed this way? Turns out, there's <em>a lot</em> of words that could be domains, and by far not all are taken!</li>
+    <!-- Not listed: serenity-fuzz-corpora sample_convex_combinations log_image pot-de-miel fuzzimg ortho4d -->
+  </ul>
+</details>
 
-<h2 id="education">Education</h2>
+<!-- <h2 id="education">Education</h2>
 
 FIXME
 
 <h2 id="publications">Publications</h2>
 
 FIXME
+-->
 
 <h2 id="interested">Interested in hiring me?</h2>
 
-FIXME
-
-<h2 id="markdown">Markdown</h2>
-
-<p>Markdown is a lightweight and easy-to-use syntax for styling your writing. It includes conventions for</p>
-
-<div class="language-markdown highlighter-rouge"><div class="highlight"><pre class="highlight"><code>Syntax highlighted code block
-
-<span class="gh"># Header 1</span>
-<span class="gu">## Header 2</span>
-<span class="gu">### Header 3</span>
-<span class="p">
--</span> Bulleted
-<span class="p">-</span> List
-<span class="p">
-1.</span> Numbered
-<span class="p">2.</span> List
-
-<span class="gs">**Bold**</span> and _Italic_ and <span class="sb">`Code`</span> text
-
-<span class="p">[</span><span class="nv">Link</span><span class="p">](</span><span class="sx">url</span><span class="p">)</span> and !<span class="p">[</span><span class="nv">Image</span><span class="p">](</span><span class="sx">src</span><span class="p">)</span>
-</code></pre></div></div>
-
-<p>For more details see <a href="https://docs.github.com/en/github/writing-on-github/getting-started-with-writing-and-formatting-on-github/basic-writing-and-formatting-syntax">Basic writing and formatting syntax</a>.</p>
-
-<h3 id="jekyll-themes">Jekyll Themes</h3>
-
-<p>Your Pages site will use the layout and styles from the Jekyll theme you have selected in your <a href="https://github.com/BenWiederhake/BenWiederhake.github.io/settings/pages">repository settings</a>. The name of this theme is saved in the Jekyll <code class="language-plaintext highlighter-rouge">_config.yml</code> configuration file.</p>
-
-<h3 id="support-or-contact">Support or Contact</h3>
-
-<p>Having trouble with Pages? Check out our <a href="https://docs.github.com/categories/github-pages-basics/">documentation</a> or <a href="https://support.github.com/contact">contact support</a> and we’ll help you sort it out.</p>
-
-        </section>
+I'm actually looking for work! I hope this collection of projects <!-- and my background, FIXME
+WRITE THAT --> could convince you that I'm already able to work on challenging projects with other
+people or alone. I like chewing on complex problems, breaking them into smaller parts, learning
+more about how things work, and know to appreciate existing libraries to do the heavy lifting.
+Contact me at <code>My Name Without Spaces Or Dots at posteo dot de</code>.
 
         <footer>
           This page is hand-crafted.
+          <br />
+          I don't see why anyone would want to copy this, but feel free to use it as you see fit. This page is licensed under the “Unlicense”.
+          <br />
+          Live a good life, be kind, improve humanity.
         </footer>
       </div>
     </div>
